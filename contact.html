@@ -5,8 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beachstay - Contact</title>
+    <link rel="html" href="index.html">
+    <link rel="html" href="blog.html">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
+<body id="contact">
+    <!-- do i actually need this ID??? -->
+    <header id="home">
+        <nav>
+            <h2>Beachstays</h2>
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#home">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Get in touch</h1>
+    </header>
+    <main>
+        <!-- section with the form -->
+        <section>
+            <form action="" method="post" name="contact-us">
+                <fieldset>
+                    <legend class="visuallyhidden">Send us a message</legend>
+                
+                    <label for="name" class="visuallyhidden">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                
+                    <label for="email" class="visuallyhidden">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                
+                    <label for="message" class="visuallyhidden">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- side bar -->
+        <aside>
+            <ul>
+                <li aria-hidden="true">
+                    <a href="https://www.facebook.com"></a>
+                    <span class="sr-only">Link to Facebook</span>
+                </li>
+                <li aria-hidden="true">
+                    <a href="https://www.instagram.com"></a>
+                    <span class="sr-only">Link to Instagram</span>
+                </li>
+                <li aria-hidden="true">
+                    <a href="https://www.twitter.com"></a>
+                    <span class="sr-only">Link to Twitter</span>
+                </li>
+                <li aria-hidden="true">
+                    <a href="https://web.whatsapp.com"></a>
+                    <span class="sr-only">Link to WhatsApp</span>
+                </li>
+            </ul>
+            <p><a href="mailto:info@email.com">info@email.com</a></p>
+            <ul class="contact-info">
+                <li>123 - 456 - 7890</li>
+                <li>123 Queen Street West</li>
+                <li>Unit 10</li>
+                <li>Toronto, Ontario</li>
+                <li>M5V2D5</li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Footer starts here -->
+    <footer id="footer">
+        <p>Copyright &copy; 2019 HackerYou</p>
+    </footer>
+    
 </body>
 </html>

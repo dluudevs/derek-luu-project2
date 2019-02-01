@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body id="blog">
+    <!-- do i actually need this ID? -->
     <header id="home">
         <nav>
             <h2>Beachstays</h2>
@@ -17,7 +18,7 @@
                 <li><a href="index.html#home">Home</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="#home">Blog</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <h1>Blog</h1>
@@ -68,10 +69,11 @@
                     <label for="email" class="visuallyhidden">Email Address</label>
                     <input type="email" name="email" id="email" placeholder="Email address" required>
 
-                    <label for="comment">Comment</label>
+                    <label for="comment" class="visuallyhidden">Comment</label>
                     <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+
+                    <button>Post Comment</button>
                 </fieldset>
-                <button>Post Comment</button>
             </form>
         </section>
 
