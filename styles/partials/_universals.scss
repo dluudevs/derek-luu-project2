@@ -1,1 +1,64 @@
-// universals is hooked up
+html{
+    @include content-font(400, 125%, 1.6rem, 0.1rem);
+    // font-size: 20px;
+}
+
+h2 {
+    @include content-font(600, 1.75rem, 2.9rem, 0.19rem);
+}
+
+a {
+    text-decoration: none;
+    // color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    input::placeholder,
+    textarea::placeholder {
+        @include content-font(300, 1rem, 1.6rem, 0.1rem);
+    }
+}
+
+button {
+    @include title-font(1rem);
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+}
+
+header h1 {
+    @include content-font (600, 3.1rem, 2.9rem, 0.335rem);
+
+    span {
+        @include title-font(5.56rem);
+    }
+}
+
+#blog h1,
+#contact h1 {
+    @include content-font(600, 4.35rem, 2.9rem, 0.45rem);
+}
+
+header nav {
+    h2 {
+        @include title-font(1.73rem);
+    }
+
+    ul {
+        @include content-font(600, 1rem, 1.45rem, 0.05rem);
+
+        li {
+            list-style: none;
+        }
+    }
+}
+
+.text-section {
+    h2 {
+        @include content-font(600, 1.5rem, 2.9rem, 0.16rem);
+    }
+}

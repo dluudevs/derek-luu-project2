@@ -1,0 +1,27 @@
+// fonts
+$title-font: 'Playfair Display SC', serif;
+$content-font: 'Lato', sans-serif;
+
+@mixin title-font ($font-size){
+    font-family: $title-font;
+    font-size: $font-size;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@mixin content-font ($font-weight, $font-size, $line-height, $letter-spacing){
+    font-family: $content-font;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
+
+// color
+$light-background: #fafffe;
+$color-background: #d2f9f1;
+
+$main-color: #063974;
+$alternate-color: #0c5f4c;
+
+$box-shadow: #50e3c2;
