@@ -145,6 +145,10 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden; }
 
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -152,19 +156,44 @@ html {
   line-height: 1.6rem;
   letter-spacing: 0.1rem; }
 
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.visit,
+.text-section,
+.free-trip,
+#blog,
+#contact {
+  background: #fafffe; }
+
+.gallery,
+.text-gallery {
+  background: #d2f9f1; }
+
+footer {
+  background: black;
+  text-align: center; }
+
 h2 {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 1.75rem;
   line-height: 2.9rem;
-  letter-spacing: 0.19rem; }
+  letter-spacing: 0.19rem;
+  color: #0c5f4c; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 ul {
   margin: 0;
   padding: 0; }
+
+img {
+  display: block; }
 
 form input::-webkit-input-placeholder,
 form textarea::-webkit-input-placeholder {
@@ -198,25 +227,34 @@ form textarea::placeholder {
   line-height: 1.6rem;
   letter-spacing: 0.1rem; }
 
+footer,
+button {
+  color: white; }
+
 button {
   font-family: "Playfair Display SC", serif;
   font-size: 1rem;
   font-style: italic;
   font-weight: 700;
   line-height: 1.6rem;
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  background: #063974;
+  border: none;
+  padding: 10px; }
 
 header h1 {
   font-family: "Lato", sans-serif;
   font-weight: 600;
   font-size: 3.1rem;
   line-height: 2.9rem;
-  letter-spacing: 0.335rem; }
+  letter-spacing: 0.335rem;
+  color: #0c5f4c; }
   header h1 span {
     font-family: "Playfair Display SC", serif;
     font-size: 5.56rem;
     font-style: italic;
-    font-weight: 700; }
+    font-weight: 700;
+    color: #063974; }
 
 #blog h1,
 #contact h1 {
@@ -224,13 +262,15 @@ header h1 {
   font-weight: 600;
   font-size: 4.35rem;
   line-height: 2.9rem;
-  letter-spacing: 0.45rem; }
+  letter-spacing: 0.45rem;
+  color: white; }
 
 header nav h2 {
   font-family: "Playfair Display SC", serif;
   font-size: 1.73rem;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+  color: #50e3c2; }
 
 header nav ul {
   font-family: "Lato", sans-serif;
@@ -238,8 +278,14 @@ header nav ul {
   font-size: 1rem;
   line-height: 1.45rem;
   letter-spacing: 0.05rem; }
+  header nav ul .off-color {
+    color: #50e3c2; }
   header nav ul li {
-    list-style: none; }
+    list-style: none;
+    color: white; }
+
+header .fullbleed {
+  background: url(../../assets/home-image-1.jpg); }
 
 .text-section h2 {
   font-family: "Lato", sans-serif;
@@ -247,3 +293,6 @@ header nav ul {
   font-size: 1.5rem;
   line-height: 2.9rem;
   letter-spacing: 0.16rem; }
+
+.text-gallery h2 {
+  color: #063974; }

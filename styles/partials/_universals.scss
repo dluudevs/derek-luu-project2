@@ -1,20 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html{
     @include content-font(400, 125%, 1.6rem, 0.1rem);
     // font-size: 20px;
 }
 
+.wrapper {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.visit,
+.text-section,
+.free-trip,
+#blog,
+#contact {
+    background: $light-background;
+}
+
+.gallery, 
+.text-gallery {
+    background: $color-background;
+}
+
+footer {
+    background: black;
+    text-align: center;
+}
+
 h2 {
     @include content-font(600, 1.75rem, 2.9rem, 0.19rem);
+    color: $alt-color;
 }
 
 a {
     text-decoration: none;
-    // color: inherit;
+    color: inherit;
 }
 
 ul {
     margin: 0;
     padding: 0;
+}
+
+img {
+    display: block;
 }
 
 form {
@@ -24,41 +57,54 @@ form {
     }
 }
 
+
+footer,
+button {
+    color: white;
+}
+
 button {
     @include title-font(1rem);
     line-height: 1.6rem;
     letter-spacing: 0.05rem;
+    background: $main-color;
+    border: none;
+    padding: 10px;
 }
 
 header h1 {
     @include content-font (600, 3.1rem, 2.9rem, 0.335rem);
+    color: $alt-color;
 
     span {
         @include title-font(5.56rem);
+        color: $main-color;
     }
 }
 
 #blog h1,
 #contact h1 {
     @include content-font(600, 4.35rem, 2.9rem, 0.45rem);
+    color: white;
 }
 
 header nav {
     h2 {
         @include title-font(1.73rem);
+        color: $box-color;
     }
 
     ul {
         @include content-font(600, 1rem, 1.45rem, 0.05rem);
 
+        .off-color {
+            color: $box-color;
+        }
+
         li {
             list-style: none;
+            color: white;
         }
     }
 }
 
-.text-section {
-    h2 {
-        @include content-font(600, 1.5rem, 2.9rem, 0.16rem);
-    }
-}

@@ -1,0 +1,20 @@
+// HEADER STYLES
+header {
+    .fullbleed {
+        background: url(../../assets/home-image-1.jpg);
+    }
+}
+
+
+
+.text-section {
+    h2 {
+        @include content-font(600, 1.5rem, 2.9rem, 0.16rem);
+    }
+}
+
+.text-gallery {
+    h2 {
+        color: $main-color;
+    }
+}
