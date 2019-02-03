@@ -8,11 +8,25 @@ html{
     // font-size: 20px;
 }
 
+.fullbleed {
+    height: 100vh;
+}
+
 .wrapper {
     width: 80%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
+
+.flex-row {
+    display:flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
 .visit,
 .text-section,
 .free-trip,
@@ -69,17 +83,30 @@ button {
     letter-spacing: 0.05rem;
     background: $main-color;
     border: none;
-    padding: 10px;
+    padding: 10px 12px;
 }
 
-header h1 {
-    @include content-font (600, 3.1rem, 2.9rem, 0.335rem);
-    color: $alt-color;
+header {
+
+    nav {
+        padding-top: 4vh;
+    }
+
+    .flex-row {
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    h1 {
+        @include content-font (600, 3.1rem, 2.9rem, 0.335rem);
+        color: $alt-color;
+    }
 
     span {
         @include title-font(5.56rem);
         color: $main-color;
     }
+
 }
 
 #blog h1,
@@ -92,6 +119,7 @@ header nav {
     h2 {
         @include title-font(1.73rem);
         color: $box-color;
+        line-height: 1.6rem;
     }
 
     ul {
@@ -102,7 +130,10 @@ header nav {
         }
 
         li {
+            display: inline-block;
+            margin-right: 1.5rem;
             list-style: none;
+            text-transform: uppercase;
             color: white;
         }
     }

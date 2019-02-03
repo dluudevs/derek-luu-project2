@@ -1,20 +1,190 @@
-// HEADER STYLES
-header {
-    .fullbleed {
-        background: url(../../assets/home-image-1.jpg);
+//***** Visit Guyana Section *****
+
+.visit {
+    padding-top: 6%;
+
+    .wrapper {
+        padding: 7% 0;
+    }
+
+    .text-wrapper {
+        width: 60%;
+    }
+
+    .flex-row {
+        justify-content: space-between;
+    }
+
+    p {
+        margin-top: 1.5%;
+        margin-bottom: 2%;
+    }
+
+    .img-wrap {
+        width: 21%;
+        
+        img {
+            width: 100%;
+            box-shadow: -1rem 1rem $box-color;
+        }
     }
 }
 
+// ***** Gallery Section *****
 
+.gallery {
+
+    .wrapper {
+        padding: 7% 0;
+    }
+    .galleryItem {
+        width: calc((100% - 5%) / 3);
+    }
+
+    .galleryItem:nth-child(2){
+        margin: 0 2.5%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+}
+
+// ***** Section with the blocks of text *****
 
 .text-section {
+
+    .wrapper {
+        padding: 7% 0;
+    }
+    
     h2 {
         @include content-font(600, 1.5rem, 2.9rem, 0.16rem);
     }
+
+    i {
+        background-color: $box-color;
+        border-radius: 50%;
+        color: white;
+        font-size: 1.4rem;
+        padding: 1.5% 1%;
+        align-self: flex-end;
+        margin-right: 3%;
+    }
+
+    .text-box {
+        width: 50%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+
+        p {
+            width: 90.25%;
+            align-self: flex-end;
+        }
+    }
+
+    .text-box:nth-child(2) p,
+    .text-box:nth-child(4) p {
+        width: 89.75%;
+    }
+
+    .text-box:nth-child(3) i {
+        padding: 1.5% 1.75%;
+    }
+
+    .text-box:nth-child(4) i {
+        padding: 1.5% 1.5%;
+    }
+
+    .text-box:nth-child(n + 3){
+        margin-top: 2%;
+    }
+
+    .flex-row {
+        flex-wrap: wrap;
+    }
 }
 
+// ***** Section with 50/50 Img and Txt *****
+
 .text-gallery {
+
     h2 {
         color: $main-color;
+    }
+
+    .text-gallery-item {
+        width: 40%;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 2%;
+    }
+    .flex-row {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        .text-wrap p {
+            margin: 3% 0;
+        }
+
+    }
+
+    .position-top {
+        position: relative;
+        bottom: 50px;
+
+        .img-wrap img {
+                box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
+            }
+        
+        .text-wrap {
+            padding-right: 12%;
+            padding-top: 8%;
+        }
+    }
+
+    .position-bottom {
+        position: relative;
+        top: 50px;
+
+        .img-wrap img {
+            box-shadow: -1.5rem 1.5rem 0 -0.5rem $box-color;
+        }
+
+        .text-wrap {
+            padding-left: 12%;
+            padding-top: 4%;
+            text-align: right;
+        }
+    }
+}
+
+// ***** FREE TRIP SECTION *****
+.free-trip {
+
+    img {
+        width: 100%;
+    }
+
+    .text-wrap {
+        text-align: center;
+        padding: 7% 0;
+        width: 55%;
+        margin: 0 auto;
+
+        p {
+            margin: 0.5% 0;
+        }
+
+        button{
+            margin-top: 1%;
+        }
     }
 }

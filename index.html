@@ -16,17 +16,22 @@
     <!-- Header starts here -->
     <header id="home">
         <div class="fullbleed">
-            <div class="wrapper">
+            <div class="wrapper flex-column">
                 <nav>
-                    <h2><a href="#home">Beachstay</a></h2>
-                    <ul>
-                        <li class="off-color"><a href="#home">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+                    <div class="flex-row">
+                        <h2><a href="#home">Beachstay</a></h2>
+                        <ul>
+                            <li class="off-color"><a href="#home">Home</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </nav>  
                 <h1>welcome to <span class="main-heading">beachstay</span></h1>  
+            </div>
+            <div class="img-wrap">
+                <img src="assets/header-box.jpg" alt="shades sitting on a bed of sand">
             </div>
         </div>
     </header>
@@ -34,68 +39,104 @@
     <main>
         <!-- Visit Guyana Section -->
         <section class="visit">
-            <h2>Visit Guyana</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis</p>
-            <button>Find Out More</button>
-            <img src="assets/small-box.jpg" alt="living room with a window view of a calming lake">
+            <div class="wrapper flex-row">
+                <div class="text-wrapper">
+                    <h2>Visit Guyana</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis.</p>
+                    <button>Find Out More</button>
+                </div>
+                <div class="img-wrap">
+                    <img src="assets/small-box.jpg" alt="living room with a window view of a calming lake">
+                </div>
+            </div>
         </section>
 
         <!-- Section with three images -->
         <section class="gallery">
-            <img src="assets/gallery-image1.jpg" alt="white cottage sitting by a bay under a cloudy sunset">
-            <img src="assets/gallery-image2.jpg" alt="night time view of white cottage with indoor lights and deck lights on">
-            <img src="assets/gallery-image3.jpg" alt="three storey home sitting on the beach surrounded by palm trees">
+            <div class="wrapper flex-row">
+                <div class="galleryItem">
+                    <img src="assets/gallery-image1.jpg" alt="white cottage sitting by a bay under a cloudy sunset">
+                </div>
+                <div class="galleryItem">
+                    <img src="assets/gallery-image2.jpg" alt="night time view of white cottage with indoor lights and deck lights on">
+                </div>
+                <div class="galleryItem">
+                    <img src="assets/gallery-image3.jpg" alt="three storey home sitting on the beach surrounded by palm trees">
+                </div>
+            </div>
         </section>
 
         <!-- Section with 4 blocks of text -->
         <section class="text-section">
-            <div class="flex">
-                <div class="text-box">
-                    <i class="fas fa-home"></i>
-                    <h2>Beach Houses</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat</p>
-                </div>
-                <div class="text-box">
-                    <i class="fas fa-users"></i>
-                    <h2>Community</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
-                    sem, sit amet imperdiet dolor placerat</p>
-                </div>
-                <div class="text-box">
-                    <i class="fas fa-file"></i>
-                    <h2>Blog</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
-                    sem, sit amet imperdiet dolor placerat</p>
-                </div>
-                <div class="text-box">
-                    <i class="fas fa-phone"></i>
-                    <h2>Get in Touch</h2>
-                    <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
-                    sem, sit amet imperdiet dolor placerat</p>
+            <div class="wrapper">
+                <div class="flex-row">
+                    <div class="text-box">
+                        <div class="flex-row">
+                            <i class="fas fa-home"></i>
+                            <h2>Beach Houses</h2>
+                        </div>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="text-box">
+                        <div class="flex-row">
+                            <i class="fas fa-users"></i>
+                            <h2>Community</h2>
+                        </div>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                        sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="text-box">
+                        <div class="flex-row">
+                            <i class="fas fa-file"></i>
+                            <h2>Blog</h2>
+                        </div>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                        sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
+                    <div class="text-box">
+                        <div class="flex-row">
+                            <i class="fas fa-phone"></i>
+                            <h2>Get in Touch</h2>
+                        </div>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit
+                        sem, sit amet imperdiet dolor placerat.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Section with image and text on top/bottom -->
         <section class="text-gallery">
-            <img src="assets/left-image.jpg" alt="a two story orange villa from the bottom" class="image-half">
-            <div class="text-half">
-                <h2>Plan Ahead</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur </p>
-                <button>Read More</button>
-            </div>
-            <img src="assets/right-image.jpg" alt="a high level view of a bay with very blue water" class="image-half">
-            <div class="text-half">
-                <h2>New Locations</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur </p>
-                <button>Read More</button>
-            </div>
-        </section>
+                <div class="flex-column">
+                    <div class="position-top flex-row">
+                        <div class="text-gallery-item img-wrap">
+                            <img src="assets/left-image.jpg" alt="a two story orange villa from the bottom" class="image-half">
+                        </div>
+                        <div class="text-gallery-item text-wrap">
+                            <h2>Plan Ahead</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,</p>
+                            <button>Read More</button>
+                        </div>
+                    </div>
+                    <div class="position-bottom flex-row">
+                        <div class="text-gallery-item text-wrap">
+                            <h2>New Locations</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex,</p>
+                            <button>Read More</button>
+                        </div>
+                        <div class="text-gallery-item img-wrap">
+                            <img src="assets/right-image.jpg" alt="a high level view of a bay with very blue water" class="image-half">
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <!-- section with banner image and text below -->
         <section class="free-trip">
-            <img src="assets/banner-image.jpg" alt="birds-eye view of beachstays' resort">
-            <div class="free-trip-text">
+            <div class="img-wrap">
+                <img src="assets/banner-image.jpg" alt="birds-eye view of beachstays' resort">
+            </div>
+            <div class="text-wrap">
                 <h2>Free trip with Beachstays</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio loerm, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at, consectetur vel turpis. Vestibulum ultricies, felis in lacinia porttitor, tortor metus convallis augue, at fermentum diam erat nec quam. Nulla faclisi.</p>
                 <button>Find out more</button>

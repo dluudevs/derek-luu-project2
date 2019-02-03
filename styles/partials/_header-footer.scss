@@ -1,0 +1,47 @@
+header {
+
+    .fullbleed {
+        background: url(../../assets/home-image-1.jpg);
+        background-size: cover;
+        height: 85vh
+    }
+
+    .wrapper {
+        position: relative;
+    }
+    
+    h1 {
+        padding-top: 36vh;
+        display: inline-block;
+        position: relative;
+        z-index: 10;
+        align-self: center;
+        
+        span {
+            display: block;
+            line-height: 5rem;
+            text-transform: capitalize;
+        }
+    }
+
+    .img-wrap {
+        position: absolute;
+        top: 29%;
+        width: 40%;
+  
+        img {
+            min-width: 100%;
+            
+        }
+    }
+}
+
+// ***** FOOTER STYLES *****
+
+footer {
+    background: #2a2a2a;
+
+    p {
+        padding: 0.5% 0;
+    }
+}
