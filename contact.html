@@ -12,7 +12,7 @@
     <link rel="html" href="blog.html">
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<body id="contact">
+<body class="contact">
     <header id="home">
         <div class="fullbleed">
             <div class="wrapper">
@@ -27,61 +27,64 @@
                         </ul>
                     </div>
                 </nav>
+                <h1>Get in touch</h1>
             </div>
         </div>
-        <h1>Get in touch</h1>
     </header>
     <main>
         <!-- section with the form -->
-        <section>
-            <form action="" method="post" name="contact-us">
-                <fieldset>
-                    <legend class="visuallyhidden">Send us a message</legend>
-                
-                    <label for="name" class="visuallyhidden">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name" required>
-                
-                    <label for="email" class="visuallyhidden">Email Address</label>
-                    <input type="email" name="email" id="email" placeholder="Email address" required>
-                
-                    <label for="message" class="visuallyhidden">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-
-                    <button>Submit</button>
-                </fieldset>
-            </form>
-        </section>
+        <div class="flex-row">
+            <section>
+                <form action="" method="post" name="contact-us">
+                    <div class="form-wrapper">
+                        <fieldset class="flex-row">
+                            <legend class="visuallyhidden">Send us a message</legend>
+                            
+                            <label for="name" class="visuallyhidden">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                    
+                            <label for="email" class="visuallyhidden">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="Email address" required>
+                        
+                            <label for="message" class="visuallyhidden">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        
+                            <button>Submit</button>
+                        </fieldset>
+                    </div>
+                </form>
+            </section>
+            <!-- side bar -->
+            <aside>
+                <ul>
+                    <li aria-hidden="true">
+                        <span class="sr-only">Link to Facebook</span>
+                        <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li aria-hidden="true">
+                        <span class="sr-only">Link to Instagram</span>
+                        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li aria-hidden="true">
+                        <span class="sr-only">Link to Twitter</span>
+                        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li aria-hidden="true">
+                        <span class="sr-only">Link to WhatsApp</span>
+                        <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+                    </li>
+                </ul>
+                <p><a href="mailto:info@email.com">info@email.com</a></p>
+                <ul class="contact-info">
+                    <li>123 - 456 - 7890</li>
+                    <li>123 Queen Street West</li>
+                    <li>Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </ul>
+            </aside>
+        </div>
     </main>
-
-    <!-- side bar -->
-    <aside>
-        <ul>
-            <li aria-hidden="true">
-                <span class="sr-only">Link to Facebook</span>
-                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li aria-hidden="true">
-                <span class="sr-only">Link to Instagram</span>
-                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li aria-hidden="true">
-                <span class="sr-only">Link to Twitter</span>
-                <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li aria-hidden="true">
-                <span class="sr-only">Link to WhatsApp</span>
-                <a href="https://web.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
-            </li>
-        </ul>
-        <p><a href="mailto:info@email.com">info@email.com</a></p>
-        <ul class="contact-info">
-            <li>123 - 456 - 7890</li>
-            <li>123 Queen Street West</li>
-            <li>Unit 10</li>
-            <li>Toronto, Ontario</li>
-            <li>M5V2D5</li>
-        </ul>
-    </aside>
 
     <!-- Footer starts here -->
     <footer id="footer">

@@ -1,4 +1,4 @@
-#blog {
+.blog {
 
     // ***** Header styles *****
     
@@ -23,7 +23,7 @@
 
     // ***** Blog article styles *****
 
-    .blog .flex-row {
+    .blog-section .flex-row {
         justify-content: space-between;
     }
 
@@ -105,58 +105,5 @@
         p {
             margin: 1% 0;
         }
-    }
-
-    // ***** Section with the form *****
-
-    .form-wrapper {
-        width: 55.75%;
-        padding-left: 10%;
-    }
-
-    fieldset {
-        border: none;
-        padding: 0;
-
-        .wrapper {
-            padding-right: 50%;
-        }
-
-        #name,
-        #email,
-        textarea {
-            margin-bottom: 5%;
-        }
-
-        #name,
-        #email {
-            border: none;
-            border-bottom: 0.125rem solid $box-color;
-            padding-bottom: 3.5%;
-            padding-left: 3.5%;
-        }
-
-        .visuallyhidden,
-        #name,
-        #email {
-            width: 46%;
-        }
-        
-        textarea {
-            width: 100%;
-            border: none;
-            border: 0.125rem solid $box-color;
-            padding-top: 3.5%;
-            padding-left: 3.5%;
-        }
-
-        button {
-            width: 100%;
-            margin-bottom: 10%;
-        }
-    }
-
-    fieldset.flex-row {
-        flex-wrap: wrap;
     }
 }

@@ -1,4 +1,4 @@
-#index header {
+.index header {
 
     .fullbleed {
         background: url(../../assets/home-image-1.jpg);
@@ -11,9 +11,10 @@
     
     h1 {
         padding-top: 36vh;
+        padding-left: 25vw;
         position: relative;
         z-index: 10;
-        align-self: center;
+        // align-self: center;
         
         span {
             display: block;

@@ -1,0 +1,69 @@
+.contact {
+    // ***** Header Styles *****
+    .fullbleed {
+        background: url('../../assets/contact-image-1.jpg');
+        background-size: cover;
+    }
+
+    header h1 {
+        padding-top: 44vh;
+    }
+    
+    //  ***** Form styles *****
+    main .flex-row {
+        justify-content: space-between;
+
+        form {
+            position: relative;
+            bottom: 200px;
+        }
+    }
+    
+    
+    .form-wrapper {
+        padding: 5% 5% 3% 5%;
+        width: 100%;
+        background: white;
+        margin-left: 10%;
+        box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
+    }
+
+    
+    button {
+        margin-bottom: 0;
+    }
+
+    // ***** Side bar styles *****
+
+    aside {
+        width: 35%;
+        padding-top: 4%;
+    }
+
+    aside ul:first-child li {
+        padding-right: 2.5%;
+    }
+
+    aside p {
+        font-weight: 700;
+        margin-bottom: 0.5%;
+    }
+
+    aside ul {
+        margin-bottom: 0.5%; 
+
+        li {
+            list-style: none;
+        }
+
+    }
+
+    aside ul:nth-of-type(1) li{
+        display: inline-block;
+    }
+
+    footer {
+        margin-top: -50px;
+    }
+
+}
