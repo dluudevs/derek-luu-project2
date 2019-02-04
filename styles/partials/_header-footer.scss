@@ -1,9 +1,8 @@
-header {
+#index header {
 
     .fullbleed {
         background: url(../../assets/home-image-1.jpg);
         background-size: cover;
-        height: 85vh
     }
 
     .wrapper {
@@ -12,7 +11,6 @@ header {
     
     h1 {
         padding-top: 36vh;
-        display: inline-block;
         position: relative;
         z-index: 10;
         align-self: center;

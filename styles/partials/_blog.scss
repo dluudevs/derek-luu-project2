@@ -1,7 +1,162 @@
-// ***** BLOG PAGE STYLES *****
 #blog {
+
+    // ***** Header styles *****
+    
     .fullbleed {
         background: url(../../assets/blog-image-1.jpg);
         background-size: cover;
+    }
+    
+    h1 {
+        padding-top: 44vh;
+    }
+    
+    .article-img {
+        width: 55vw;
+        margin-top: 3%;
+    
+        img {
+            width: calc(100% - 1rem);
+            box-shadow: 2rem 2rem 0 -1rem $box-color;
+        }
+    }
+
+    // ***** Blog article styles *****
+
+    .blog .flex-row {
+        justify-content: space-between;
+    }
+
+    .article-text {
+        margin-top: 43%;
+        padding: 7% 10% 6% 18%;
+        border-right: 0.25rem solid $box-color;
+        border-bottom: 0.25rem solid $box-color;
+        width: 55vw;
+
+        h3 {
+            color: $main-color;
+            font-style: italic;
+            @include content-font(400, 1rem, 1.45rem, 0rem);
+        }
+
+        span {
+            font-weight: 700;
+        }
+
+        p {
+            margin: 4% 0;
+        }
+
+        p:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    // ***** Side bar styles *****
+    aside {
+        width: 20%;
+        padding-top: 4.5%;
+
+        h3 {
+            color: $main-color;
+            margin: 5% 0;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            color: $box-color;
+            padding-left: 0.5rem;
+
+            span {
+                color: black;
+            }
+        }
+    }
+
+    // ***** Comments style *****
+
+    article .wrapper {
+        h2 {
+            color: black;
+            margin: 3% 0;
+        }
+
+        .flex-row {
+            justify-content: flex-start;
+            
+            .comment-text:nth-child(2) {
+                margin-bottom: 4%;
+            }
+        }
+    }
+    
+    .comment-text {
+        width: 45%;
+        margin-left: 2.5%;
+        
+        h3 {
+            color: $main-color;
+        }
+
+        p {
+            margin: 1% 0;
+        }
+    }
+
+    // ***** Section with the form *****
+
+    .form-wrapper {
+        width: 55.75%;
+        padding-left: 10%;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+
+        .wrapper {
+            padding-right: 50%;
+        }
+
+        #name,
+        #email,
+        textarea {
+            margin-bottom: 5%;
+        }
+
+        #name,
+        #email {
+            border: none;
+            border-bottom: 0.125rem solid $box-color;
+            padding-bottom: 3.5%;
+            padding-left: 3.5%;
+        }
+
+        .visuallyhidden,
+        #name,
+        #email {
+            width: 46%;
+        }
+        
+        textarea {
+            width: 100%;
+            border: none;
+            border: 0.125rem solid $box-color;
+            padding-top: 3.5%;
+            padding-left: 3.5%;
+        }
+
+        button {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+    }
+
+    fieldset.flex-row {
+        flex-wrap: wrap;
     }
 }
