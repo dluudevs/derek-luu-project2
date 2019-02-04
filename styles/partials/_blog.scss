@@ -23,8 +23,9 @@
 
     // ***** Blog article styles *****
 
-    .blog-section .flex-row {
+    .blog-wrapper.flex-row {
         justify-content: space-between;
+        flex-direction: row-reverse;
     }
 
     .article-text {

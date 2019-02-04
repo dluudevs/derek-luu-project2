@@ -10,13 +10,31 @@
     }
     
     //  ***** Form styles *****
-    main .flex-row {
-        justify-content: space-between;
+    // main .flex-row {
+    //     justify-content: space-between;
 
-        form {
-            position: relative;
-            bottom: 200px;
-        }
+    //     section {
+    //         position: relative;
+    //     }
+
+    //     form {
+    //         position: absolute;
+    //         width: 900px;
+    //         // position: relative;
+    //         bottom: 100px;
+    //     }
+    // }
+
+    
+    section {
+        position: relative;
+    }
+    
+    .contact-form {
+        position: absolute;
+        top: -250px;
+        // not relative to anything so that it can retain its % width
+        max-width: 100%;
     }
     
     
@@ -24,19 +42,25 @@
         padding: 5% 5% 3% 5%;
         width: 100%;
         background: white;
-        margin-left: 10%;
+        margin-left: 20%;
         box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
     }
-
+    
     
     button {
         margin-bottom: 0;
     }
-
+    
     // ***** Side bar styles *****
+    
+    .contact-list.flex-row {
+        justify-content: flex-end;
+        margin-bottom: 5%;
+        width: 85%;
+    }
 
     aside {
-        width: 35%;
+        min-width: 15%; 
         padding-top: 4%;
     }
 
@@ -46,11 +70,11 @@
 
     aside p {
         font-weight: 700;
-        margin-bottom: 0.5%;
+        margin-bottom: 5%;
     }
 
     aside ul {
-        margin-bottom: 0.5%; 
+        margin-bottom: 5%; 
 
         li {
             list-style: none;
@@ -62,8 +86,5 @@
         display: inline-block;
     }
 
-    footer {
-        margin-top: -50px;
-    }
 
 }

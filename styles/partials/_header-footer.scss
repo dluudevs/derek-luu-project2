@@ -11,10 +11,9 @@
     
     h1 {
         padding-top: 36vh;
-        padding-left: 25vw;
+        padding-left: 30vw;
         position: relative;
         z-index: 10;
-        // align-self: center;
         
         span {
             display: block;
@@ -24,16 +23,64 @@
     }
 
     .img-wrap {
-        position: absolute;
-        top: 29%;
-        width: 40%;
-  
+        // position: absolute;
+        // top: 29%;
+        position: relative;
+        bottom: 36%;
+        width: 45.5%;
+        
         img {
-            min-width: 100%;
+            width: 100%;
             
         }
     }
+    
+    @media (max-width: 1535px){
+
+        .fullbleed {
+            height: 100vh;
+        }
+       
+        h1 {
+            padding-top: 34vh;
+            padding-left: 6vw;
+            align-self: center;
+            // adjusted to 955px
+        }
+    
+        .img-wrap {
+            display: none;
+        }
+    }
+
+    @media (max-width: 956px){
+        h1 {
+            padding-left: 0;
+        }
+        
+        nav h2 {
+            display: none;
+        }
+
+        nav .flex-row {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 751px){
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            // 3.1rem
+
+            span {
+                font-size: 4rem;
+                // 5rem
+            }
+        }
+    }
 }
+
 
 // ***** FOOTER STYLES *****
 

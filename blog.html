@@ -32,45 +32,48 @@
             </div>
         </div>
     </header>
-    <main>
-        <!-- Main section of the page -->
-        <section class="blog-section">
-            <!-- Blog post starts here -->
-            <div class="flex-row">
-                <article>
-                    <div class="article-text">
-                        <h2>Five days of the ocean seas</h2>
-                        <h3>Monday January 21st, 2019 by <span>Bora</span></h3>
-                        
-                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
-                        
-                        <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
-                        
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
-                        
-                        <p>Praesent facilisis dolor sapien, vel sodals augue mollis ut. Mauris venenatis magna eu totor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
-                    </div>
-                </article>
-    
-                <!-- Sidebar -->
-                <aside>
-                    <img src="assets/sidebar-image.jpg" alt="white cottage sitting by a bay under a cloudy sunset">
-                    <div>
-                        <h3>Our mission</h3>
-                        <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a></p>
-                    </div>
-                    <div>
-                        <h3>Recent Posts</h3>
-                        <ul>
-                            <li><span><a href="#">Donec facilisis totor ut</a></span></li>
-                            <li><span><a href="#">Augue lacinia at viverra</a></span></li>
-                            <li><span><a href="#">Semper sed sapien metus</a></span></li>
-                            <li><span><a href="#">Scelerisque nec pharetra</a></span></li>
-                        </ul>
-                    </div>
-                </aside>
+    <div class="blog-wrapper flex-row"> <!-- wraps the article and side bar -->
+        <!-- Sidebar -->
+        <aside>
+            <img src="assets/sidebar-image.jpg" alt="white cottage sitting by a bay under a cloudy sunset">
+            <div>
+                <h3>Our mission</h3>
+                <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="#">Find out more.</a></p>
             </div>
+            <div>
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><span><a href="#">Donec facilisis totor ut</a></span></li>
+                    <li><span><a href="#">Augue lacinia at viverra</a></span></li>
+                    <li><span><a href="#">Semper sed sapien metus</a></span></li>
+                    <li><span><a href="#">Scelerisque nec pharetra</a></span></li>
+                </ul>
+            </div>
+        </aside>
 
+        <main>
+            <!-- Main section of the page -->
+            <section class="blog-section">
+                <!-- Blog post starts here -->
+                <div class="flex-row">
+                    <article>
+                        <div class="article-text">
+                            <h2>Five days of the ocean seas</h2>
+                            <h3>Monday January 21st, 2019 by <span>Bora</span></h3>
+                            
+                            <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                            
+                            <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                            
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
+                            
+                            <p>Praesent facilisis dolor sapien, vel sodals augue mollis ut. Mauris venenatis magna eu totor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div> <!-- closing tag for wrapper around article and side bar -->
+        <section>
             <!-- Comments -->
             <article>
                 <div class="wrapper">
@@ -96,18 +99,18 @@
                 </div>
             </article>
             
-            <!-- Blog post form -->
+        <!-- Blog post form -->
             <form action="" name="post-comment" method="post">
                 <div class="form-wrapper">
                     <fieldset class="flex-row">
                         <legend class="visuallyhidden">Post a Comment</legend>
-    
+
                         <label for="name" class="visuallyhidden">Name</label>
                         <input type="text" name="name" id="name" placeholder="Name" required>
-    
+
                         <label for="email" class="visuallyhidden">Email Address</label>
                         <input type="email" name="email" id="email" placeholder="Email address" required>
-    
+
                         <label for="comment" class="visuallyhidden">Comment</label>
                         <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
                         
@@ -116,7 +119,6 @@
                 </div>
             </form>
         </section>
-
     </main>
 
     <!-- Footer  -->
