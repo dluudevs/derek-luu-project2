@@ -28,6 +28,53 @@
             box-shadow: -1rem 1rem $box-color;
         }
     }
+
+    @media (max-width: 1621px){
+        .img-wrap {
+            width: 24%;
+        }
+    }
+
+    @media (max-width: 1444px){
+        .img-wrap {
+            width: 29%;
+        }
+    }
+
+    @media (max-width: 1325px){
+        padding-top: 0;
+        // .visit
+
+        .flex-row {
+            padding: 8% 0;
+            flex-direction: column-reverse;
+        }
+
+        .text-wrapper {
+            margin-top: 6%;
+            width: 100%;
+        }
+        
+        .img-wrap {
+            width: 50%;
+            align-self: center;
+        }
+    }
+
+    @media (max-width: 851px){
+        
+        .img-wrap {
+            width: 100%;
+        }
+
+        .text-wrapper {
+            text-align: center;
+        }
+
+        .text-wrapper button {
+            width: 100%;
+        }
+    }
 }
 
 // ***** Gallery Section *****
