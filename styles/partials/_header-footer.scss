@@ -22,9 +22,7 @@
         }
     }
 
-    nav .burger {
-        display: none;
-    }
+ 
 
     .img-wrap {
         position: relative;
@@ -53,14 +51,6 @@
     @media (max-width: 956px){
         h1 {
             padding-left: 0;
-        }
-        
-        nav h2 {
-            display: none;
-        }
-
-        nav .flex-row {
-            justify-content: center;
         }
     }
 
@@ -92,27 +82,6 @@
                 line-height: 0.25;
                 // original font-size 5rem
             }
-        }
-
-        nav .flex-row {
-            justify-content: flex-end;
-        }
-
-        nav li{
-            margin-right: 0;
-        }
-
-        nav li a {
-            display: none;
-        }
-
-        nav li .burger {
-            display: block;
-            margin-right: 0;
-        }
-
-        nav img {
-            width: 80%;
         }
     }
 

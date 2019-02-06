@@ -118,21 +118,6 @@
         .text-wrapper {
             width: 90%;
         }
-
-        // this greyed out text is replaced by font-size in the html tag
-        // .text-wrapper h2 {
-        //     font-size: 35px
-        //     font-size: calc(0.9rem * 35 / 20);
-        //     line-height: calc(1.5rem * 58 / 32);
-        // }
-        
-        // .text-wrapper p,
-        // .text-wrapper button {
-        //     font-size: 20px
-        //     font-size: 0.9rem;
-        //     line-height: 32px
-        //     line-height: 1.5rem;
-        // }
     }
     
     @media (max-width: 501px){
@@ -152,22 +137,7 @@
         .text-wrap {
             width: 100%;
         }
-        
-        // .text-wrapper p,
-        // .text-wrapper button {
-        //     font-size: 0.8rem;
-        //     line-height: 1.4rem;
-        // }
-        
-        // .text-wrapper h2 {
-        //     // font-size: 35px
-        //     font-size: calc(0.8rem * 35 / 20);
-        //     // line-height: 58px
-        //     line-height: calc(1.4rem * 58 / 32);
-
-        // }
     }
-
 }
 
 // -------------------- Gallery Section --------------------

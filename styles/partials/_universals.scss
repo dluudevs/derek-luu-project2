@@ -37,6 +37,7 @@ html{
     }
 }
 
+
 .flex-row {
     display:flex;
 }
@@ -130,8 +131,48 @@ header {
         @include title-font(5.56rem);
         color: $main-color;
     }
-
+        
+    nav .burger {
+        display: none;
+    }
 }
+    @media (max-width: 956px){
+        nav h2 {
+                display: none;
+            }
+
+        nav .flex-row {
+            justify-content: center;
+        }
+
+        .blog h1,
+        .contact h1 {
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 641px){
+        nav .flex-row {
+            justify-content: flex-end;
+        }
+
+        nav li{
+            margin-right: 0;
+        }
+
+        nav li a {
+            display: none;
+        }
+
+        nav li .burger {
+            display: block;
+            margin-right: 0;
+        }
+
+        nav img {
+            width: 80%;
+        }
+    }
 
 .blog h1,
 .contact h1 {
