@@ -28,9 +28,8 @@
 
     .img-wrap {
         position: relative;
-        bottom: 30%;
-        // width: 45.5%;
-        width: 42%;     
+        bottom: 29.5%;
+        width: 42%;      
         
         img {
             width: 100%;
@@ -39,16 +38,11 @@
     }
     
     @media (max-width: 1535px){
-
-        .fullbleed {
-            height: 100vh;
-        }
        
         h1 {
             padding-top: 34vh;
             padding-left: 6vw;
             align-self: center;
-            // adjusted to 955px
         }
     
         .img-wrap {
@@ -71,17 +65,17 @@
     }
 
     @media (max-width: 751px){
+        //first font-size change in html occurs at 641px
 
         h1 {
             font-size: calc(4rem * (3.1 / 5));
+            //original font-size 3.1rem
             text-align: center;
-            // 3.1rem original font size
 
             span {
-                font-size: 4rem;
+                font-size: 4rem; //80px 
                 line-height: 0.5;
-                // optimized for 640px
-                // 5rem original font size
+                //original font-size 5rem
             }
         }
     }
@@ -89,11 +83,14 @@
     @media (max-width: 641px){
 
         h1 {
-            font-size: calc(2.8rem * (3.1 / 5));
-            line-height: 1.2;
+            font-size: calc(3.1rem * (3.1 / 5));
+            padding-top: 28vh;
+            // original font-size 3.1rem
 
             span {
-                font-size: 2.8rem;
+                font-size: 3.1rem; //56px
+                line-height: 0.25;
+                // original font-size 5rem
             }
         }
 
@@ -119,20 +116,22 @@
         }
     }
 
-    @media (max-width: 421px){
+    @media (max-width: 501px){
 
         h1 {
-            font-size: calc(2.1rem * (3.1 / 5));
+            font-size: calc(2.625rem * (3.1 / 5));
+            // original font size 3.1rem
 
             span {
-                font-size: 2.1rem;
+                font-size: 2.625rem; //42px
+                line-height: 0;
+                // original font size 5rem
             }
         }
     }
 }
 
-
-// ***** FOOTER STYLES *****
+// -------------------- FOOTER STYLES --------------------
 
 footer {
     background: #2a2a2a;

@@ -8,12 +8,17 @@ html{
     // font-size: 20px;
 }
 
-// @media (max-width: 751px){
-    
-//     html {
-//         font-size: 100%;
-//     }
-// }
+@media (max-width: 641px){
+    html {
+        font-size: 112.5%;
+    }
+}
+
+@media (max-width: 501px){
+    html {
+        font-size: 100%;
+    }
+}
 
 .fullbleed {
     height: 85vh;
@@ -102,7 +107,7 @@ button {
     letter-spacing: 0.05rem;
     background: $main-color;
     border: none;
-    padding: 10px 12px;
+    padding: 10px 15px;
 }
 
 header {
@@ -158,7 +163,7 @@ header nav {
     }
 }
 
-// **** Form styling for the last 2 pages ****
+// -------------------- Form styling for the last 2 pages --------------------
 .form-wrapper {
         width: 55.75%;
         padding-left: 10%;

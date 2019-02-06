@@ -1,10 +1,13 @@
-//***** Visit Guyana Section *****
+//-------------------- Visit Guyana Section --------------------
+
+// TODO: clean out commented out code
 
 .visit {
     padding-top: 6%;
 
     .wrapper {
-        padding: 7% 0;
+        padding-top: 9%;
+        padding-bottom: 7%;
     }
 
     .text-wrapper {
@@ -17,7 +20,7 @@
 
     p {
         margin-top: 1.5%;
-        margin-bottom: 2%;
+        margin-bottom: 2.2%;
     }
 
     .img-wrap {
@@ -29,9 +32,19 @@
         }
     }
 
-    @media (max-width: 1621px){
+    @media (max-width: 1636px){
         .img-wrap {
             width: 24%;
+        }
+    }
+
+    @media (max-width: 1535px){
+        padding-top: 0;
+        //.visit
+
+        .wrapper {
+            padding-top: 7%;
+            padding-bottom: 6.5%;
         }
     }
 
@@ -42,17 +55,21 @@
     }
 
     @media (max-width: 1325px){
-        padding-top: 0;
-        // .visit
 
         .flex-row {
             padding: 8% 0;
             flex-direction: column-reverse;
         }
 
+        p {
+            margin-bottom: 3.2%;
+        }
+
         .text-wrapper {
             margin-top: 6%;
-            width: 100%;
+            width: 54%;
+            margin: 0 auto;
+            margin-top: 5%;
         }
         
         .img-wrap {
@@ -61,44 +78,176 @@
         }
     }
 
-    @media (max-width: 851px){
+    @media (max-width: 901px){
+
+        .wrapper {
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+
+        .img-wrap {
+            width: 65%;
+        }
         
+        .text-wrapper {
+            width: 70%;
+        }
+    
+        .text-wrapper button {
+            min-width: 40%;
+            padding: 1.5%;
+        }
+
+        p {
+            margin-top: 0;
+            margin-bottom: 2.5%;
+        }
+    }
+
+    @media (max-width: 641px){
+
+        .wrapper {
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+
+        .img-wrap {
+            width: 80%;
+        }
+
+        .text-wrapper {
+            width: 90%;
+        }
+
+        // this greyed out text is replaced by font-size in the html tag
+        // .text-wrapper h2 {
+        //     font-size: 35px
+        //     font-size: calc(0.9rem * 35 / 20);
+        //     line-height: calc(1.5rem * 58 / 32);
+        // }
+        
+        // .text-wrapper p,
+        // .text-wrapper button {
+        //     font-size: 20px
+        //     font-size: 0.9rem;
+        //     line-height: 32px
+        //     line-height: 1.5rem;
+        // }
+    }
+    
+    @media (max-width: 501px){
+
         .img-wrap {
             width: 100%;
+
+            img {
+                box-shadow: none;
+            }
         }
 
         .text-wrapper {
             text-align: center;
         }
 
-        .text-wrapper button {
+        .text-wrap {
             width: 100%;
         }
+        
+        // .text-wrapper p,
+        // .text-wrapper button {
+        //     font-size: 0.8rem;
+        //     line-height: 1.4rem;
+        // }
+        
+        // .text-wrapper h2 {
+        //     // font-size: 35px
+        //     font-size: calc(0.8rem * 35 / 20);
+        //     // line-height: 58px
+        //     line-height: calc(1.4rem * 58 / 32);
+
+        // }
     }
+
 }
 
-// ***** Gallery Section *****
+// -------------------- Gallery Section --------------------
 
 .gallery {
 
     .wrapper {
         padding: 7% 0;
     }
+
+    @media (max-width: 1444px){
+        .wrapper {
+            padding: 5% 0;
+        }    
+    }
+
+    
     .galleryItem {
-        width: calc((100% - 5%) / 3);
+        width: calc((100% - 8%) / 3);
     }
-
+    
     .galleryItem:nth-child(2){
-        margin: 0 2.5%;
+        margin: 0 4%;
     }
-
+    
     img {
         width: 100%;
+    }
+    
+    @media (max-width: 1325px){
+        .wrapper.flex-row {
+            flex-wrap: wrap;
+        }
+
+        .galleryItem {
+            width: calc((100% - 8%) / 2);
+        }
+
+        .galleryItem:nth-child(3){
+            margin: 0 auto;
+            margin-top: 4%;
+        }
+    }
+
+    @media (max-width: 901px){
+
+        .wrapper.flex-row{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .galleryItem {
+            width: 65%;
+        }
+
+        .galleryItem:nth-child(2){
+            margin: 4% 0;
+        }
+
+        .galleryItem:nth-child(3){
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 641px){
+        .galleryItem {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 501px){
+        .galleryItem {
+            width: 100%;
+        }
     }
 
 }
 
-// ***** Section with the blocks of text *****
+// -------------------- Section with the blocks of text --------------------
 
 .text-section {
 
@@ -153,13 +302,39 @@
         padding: 1.5%;
     }
 
+    @media (max-width: 901px){
+        .text-box {
+            width: 75%;
+            margin-bottom: 2%;
+        }
 
-    // .text-bottom .text-box:last-child i {
-    //     padding: 1.5% 1.5%;
-    // }
+        .text-top .text-box:last-child,
+        .text-bottom .text-box:last-child {
+            margin-bottom: 0;
+        }
+
+        .text-top.flex-row,
+        .text-bottom.flex-row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 641px){
+        .text-box {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 501px){
+        .text-box {
+            width: 100%;
+        }
+    }
+
 }
 
-// ***** Section with 50/50 Img and Txt *****
+// -------------------- Section with 50/50 Img and Txt --------------------
 
 .text-gallery {
 
@@ -178,12 +353,14 @@
     button {
         margin-top: 2%;
     }
+
     .flex-row {
         flex-wrap: wrap;
         justify-content: space-between;
         
         .text-wrap p {
             margin: 3% 0;
+            width: 70%;
         }
 
     }
@@ -193,12 +370,17 @@
         bottom: 50px;
 
         .img-wrap img {
-                box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
-            }
+            box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
+        }
         
         .text-wrap {
-            padding-right: 12%;
-            padding-top: 8%;
+            display: flex;
+            flex-direction: column;    
+            justify-content: center;
+
+            .flex-column {
+                align-items: flex-start;    
+            }
         }
     }
 
@@ -211,14 +393,127 @@
         }
 
         .text-wrap {
-            padding-left: 12%;
-            padding-top: 4%;
             text-align: right;
+            .flex-column {
+                align-items: flex-end;
+            }
+        }
+    }
+
+    @media (max-width: 1636px){
+        .position-bottom {
+            top: 0;
+
+            .text-gallery-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        .position-top {
+            bottom: 0;
+            margin-bottom: 1%;
+        }
+    }
+
+    @media (max-width: 1444px){
+        .flex-row .text-wrap p {
+            margin: 0;
+        }
+
+        button {
+            margin-top: 1%;
+        }
+    }
+
+    @media (max-width: 1325px){
+
+        .position-top {
+            padding-top: 3%;
+        }
+
+        .position-bottom {
+            padding-bottom: 3%;
+        }
+
+        .position-top.flex-row,
+        .position-bottom.flex-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .position-bottom.flex-row{
+            flex-direction: column-reverse;
+        }
+
+        .position-bottom .text-wrap {
+            text-align: left;
+
+            .flex-column {
+                align-items: flex-start;
+            }
+        }
+
+        .text-gallery-item {
+            width: 50%;
+        }
+
+        .text-gallery-item .flex-column {
+            margin-top: 6%;
+            margin-bottom: 2%;
+
+            p {
+                width: 100%;
+            }
+        }
+
+        button {
+            margin-top: 2%;
+        }
+    }
+
+    @media (max-width: 909px){
+        .text-gallery-item{
+            width: 65%;
+        }
+    }
+
+    @media (max-width: 641px){
+        .text-gallery-item {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 501px){
+        .text-gallery-item {
+            width: 90%;
+        }
+
+        .position-top .text-wrap {
+            text-align: center;
+
+            .flex-column {
+                align-items: center;
+            }
+        }
+        
+        .position-top .img-wrap img {
+            box-shadow: none;
+        }
+
+        .position-bottom .text-wrap {
+            text-align: center;
+
+            .flex-column {
+                align-items: center;
+            }
+
         }
     }
 }
 
-// ***** FREE TRIP SECTION *****
+// -------------------- FREE TRIP SECTION --------------------
 .free-trip {
 
     img {
@@ -237,6 +532,50 @@
 
         button{
             margin-top: 1%;
+        }
+    }
+
+    @media (max-width: 909px){
+        .text-wrap{
+            width: 65%;
+        }
+
+        div:first-child{
+            display: none;
+        }
+    }
+
+    @media (max-width: 774px){
+        .text-wrap{
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 571px){
+        .text-wrap {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 507px){
+        .text-wrap {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 430px){
+        .text-wrap {
+            width: 100%;
+        }
+
+        .text-wrap h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    @media (max-width: 365px){
+        .text-wrap h2 {
+            font-size: 1.2rem;
         }
     }
 }
