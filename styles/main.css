@@ -449,7 +449,7 @@ fieldset.flex-row {
   justify-content: space-between; }
 
 .index header .fullbleed {
-  background: url(../../assets/home-image-1.jpg);
+  background: url(../assets/home-image-1.jpg);
   background-size: cover; }
 
 .index header .wrapper {
@@ -902,7 +902,7 @@ footer {
     font-size: 1.2rem; } }
 
 .blog .fullbleed {
-  background: url(../../assets/blog-image-1.jpg);
+  background: url(../assets/blog-image-1.jpg);
   background-size: cover;
   position: relative; }
 
@@ -1094,7 +1094,7 @@ footer {
     width: 200px; } }
 
 .contact .fullbleed {
-  background: url("../../assets/contact-image-1.jpg");
+  background: url("../assets/contact-image-1.jpg");
   background-size: cover; }
 
 .contact header h1 {
