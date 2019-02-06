@@ -1019,7 +1019,8 @@ footer {
       -ms-flex-preferred-size: 295px;
       flex-basis: 295px; }
     .blog .post-wrapper li:first-child,
-    .blog .post-wrapper li:nth-child(2) {
+    .blog .post-wrapper li:nth-child(2),
+    .blog .post-wrapper li:nth-child(3) {
       margin-bottom: 2%; }
     .blog .post-wrapper li:nth-child(2) {
       padding-right: 1.75%; }
