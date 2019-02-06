@@ -111,10 +111,25 @@ button {
     padding: 10px 15px;
 }
 
+a {
+    transition: color 0.25s ease-in,
+                font-weight 0.5s ease-in;
+}
+
+aside a:hover {
+    color: $box-color;
+    font-weight: 700;
+}
+
 header {
 
     nav {
         padding-top: 4vh;
+
+
+        a:hover {
+            color: $box-color;
+        }
     }
 
     .flex-row {
@@ -190,10 +205,6 @@ header nav {
     ul {
         @include content-font(600, 1rem, 1.45rem, 0.05rem);
 
-        .off-color {
-            color: $box-color;
-        }
-
         li {
             display: inline-block;
             margin-right: 1.5rem;
@@ -252,3 +263,6 @@ header nav {
         justify-content: space-between;
     }
 
+    // ---------- Side bar styling for last 2 pages ----------
+
+   

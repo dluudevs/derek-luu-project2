@@ -9,23 +9,6 @@
         padding-top: 44vh;
     }
     
-    //  ***** Form styles *****
-    // main .flex-row {
-    //     justify-content: space-between;
-
-    //     section {
-    //         position: relative;
-    //     }
-
-    //     form {
-    //         position: absolute;
-    //         width: 900px;
-    //         // position: relative;
-    //         bottom: 100px;
-    //     }
-    // }
-
-    
     section {
         position: relative;
     }
@@ -34,7 +17,7 @@
         position: absolute;
         top: -250px;
         // not relative to anything so that it can retain its % width
-        max-width: 100%;
+        width: 52%;
     }
     
     
@@ -60,8 +43,13 @@
     }
 
     aside {
-        min-width: 15%; 
+        min-width: 1%; 
         padding-top: 4%;
+
+        a:hover {
+            color: $box-color;
+            font-weight: 400;
+        }
     }
 
     aside ul:first-child li {
@@ -85,6 +73,82 @@
     aside ul:nth-of-type(1) li{
         display: inline-block;
     }
+    
+    @media (max-width: 1535px) {
 
+        header h1 {
+            padding-top: 34vh;
+        }
 
+        .contact-form {
+            position: static;
+            width: 65%;
+            margin: 0 auto;
+            margin-top: 2%;
+        }
+
+        .form-wrapper {
+            margin: 0;
+            box-shadow: none;
+            border: 3px solid $box-color;
+        }
+        
+        .contact-list.flex-row {
+            width: 65%;
+            margin: 0 auto;
+            margin-bottom: 2%;
+            text-align: center;
+        }
+
+        aside {
+            width: 100%;
+
+            ul {
+                margin-bottom: 1%;
+            }
+        }
+
+        aside p {
+            margin-bottom: 1%;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            li {
+                margin-right: 2%;
+                flex-basis: content;
+            }
+        }
+    }
+
+    @media (max-width: 1325px){
+        .contact-form, .contact-list.flex-row {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 909px){
+        .contact-form, .contact-list.flex-row{
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 641px){
+        .contact-form {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 501px){
+        .contact-list.flex-row {
+            display: none;
+        }
+
+        .contact-form {
+            width: 98%;
+        }
+
+    }
 }
