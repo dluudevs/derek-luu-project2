@@ -172,7 +172,7 @@ html {
   max-width: 1600px;
   margin: 0 auto; }
 
-@media (max-width: 770px) {
+@media (max-width: 741px) {
   .wrapper {
     width: 90%; } }
 
@@ -331,23 +331,8 @@ header nav input {
     text-align: center; } }
 
 @media (max-width: 741px) {
-  header nav label {
-    display: block;
-    width: 10%;
-    float: left; }
-  header nav input {
-    float: left;
-    visibility: hidden; }
   nav .flex-row {
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
-  nav li {
-    margin-right: 0; }
-  nav .flex-row {
-    display: none; }
-  nav img {
-    width: 80%; } }
+    display: none; } }
 
 .blog h1,
 .contact h1 {
@@ -459,12 +444,16 @@ fieldset.flex-row {
 @media (max-width: 956px) {
   .index header h1 {
     padding-left: 0;
-    text-align: center; } }
+    font-size: calc(4rem * (3.1 / 5)); }
+    .index header h1 span {
+      font-size: 4rem;
+      line-height: 2rem; } }
 
 @media (max-width: 741px) {
   .index header h1 {
     font-size: calc(3.1rem * (3.1 / 5));
-    padding-top: 28vh; }
+    padding-top: 28vh;
+    text-align: center; }
     .index header h1 span {
       font-size: 3.1rem;
       line-height: 0.25; } }
@@ -1040,7 +1029,7 @@ footer {
       .blog .flex-row_mobile .post-wrapper li {
         -ms-flex-preferred-size: auto;
         flex-basis: auto; } }
-  @media (max-width: 770px) {
+  @media (max-width: 741px) {
     .blog .blog-wrapper.flex-row .main-blog {
       width: 100%; }
     .blog .blog-wrapper.flex-row .wrapper {

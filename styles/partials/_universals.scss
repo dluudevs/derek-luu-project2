@@ -31,12 +31,12 @@ html{
     margin: 0 auto;
 }
 
-@media (max-width: 770px){
 
+@media (max-width: 741px){
+    
     .wrapper {
         width: 90%;
     }
-
 }
 
 
@@ -173,33 +173,13 @@ header {
 
     @media (max-width: 741px){
 
-        header nav label {
-            display: block;
-            width: 10%;
-            float: left;
-        }
-
-        header nav input {
-            float: left;
-            visibility: hidden;
-        }
-
-        nav .flex-row {
-            justify-content: flex-end;
-        }
-
-        nav li{
-            margin-right: 0;
-        }
 
         nav .flex-row {
             display: none;
         }
 
+        //------------------------ hamburger nav bar ------------------------
 
-        nav img {
-            width: 80%;
-        }
     }
 
 .blog h1,

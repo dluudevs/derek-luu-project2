@@ -17,9 +17,7 @@
     <header id="home">
         <div class="fullbleed">
             <div class="wrapper">
-                <nav class="clearfix">
-                    <label for="nav-toggle"><img src="assets/hamburgerMenu.png" alt="click here for nav bar" class="burger"></label>
-                    <input type="radio" id="nav-toggle" class="hide-input">
+                <nav>
                     <div class="flex-row">
                         <h2><a href="#home">Beachstay</a></h2>
                         <ul>
@@ -153,6 +151,15 @@
     <footer id="footer">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
-    
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script>
+        $(function () {
+            $('.navbar-toggle, nav').click(function () {
+                $('.navbar-toggle').toggleClass('navbar-on');
+                $('nav').fadeToggle();
+                $('nav').removeClass('nav-hide');
+            });
+        });
+    </script>
 </body>
 </html>
