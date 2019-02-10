@@ -48,7 +48,6 @@
 
         a:hover {
             color: $box-color;
-            font-weight: 400;
         }
     }
 
@@ -89,8 +88,12 @@
 
         .form-wrapper {
             margin: 0;
+            // box-shadow: 0 1rem $box-color;
             box-shadow: none;
-            border: 3px solid $box-color;
+            border-bottom: 1rem solid $box-color;
+            border-left: 0.5rem solid $box-color;
+            border-right: 0.5rem solid $box-color;
+            border-top: 0.125rem solid $box-color;
         }
         
         .contact-list.flex-row {
@@ -129,7 +132,7 @@
         }
     }
 
-    @media (max-width: 909px){
+    @media (max-width: 928px){
         .contact-form, .contact-list.flex-row{
             width: 90%;
         }

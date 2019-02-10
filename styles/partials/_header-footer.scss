@@ -51,26 +51,30 @@
     @media (max-width: 956px){
         h1 {
             padding-left: 0;
-        }
-    }
-
-    @media (max-width: 751px){
-        //first font-size change in html occurs at 641px
-
-        h1 {
-            font-size: calc(4rem * (3.1 / 5));
-            //original font-size 3.1rem
             text-align: center;
-
-            span {
-                font-size: 4rem; //80px 
-                line-height: 0.5;
-                //original font-size 5rem
-            }
         }
+        
+
+
     }
 
-    @media (max-width: 641px){
+    // @media (max-width: 751px){
+    //     //first font-size change in html occurs 741px 641px
+
+    //     h1 {
+    //         font-size: calc(4rem * (3.1 / 5));
+    //         //original font-size 3.1rem
+    //         text-align: center;
+
+    //         span {
+    //             font-size: 4rem; //80px 
+    //             line-height: 0.5;
+    //             //original font-size 5rem
+    //         }
+    //     }
+    // }
+
+    @media (max-width: 741px){
 
         h1 {
             font-size: calc(3.1rem * (3.1 / 5));

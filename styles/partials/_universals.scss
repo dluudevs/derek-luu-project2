@@ -8,7 +8,7 @@ html{
     // font-size: 20px;
 }
 
-@media (max-width: 641px){
+@media (max-width: 741px){
     html {
         font-size: 112.5%;
     }
@@ -20,6 +20,7 @@ html{
     }
 }
 
+
 .fullbleed {
     height: 85vh;
 }
@@ -30,15 +31,12 @@ html{
     margin: 0 auto;
 }
 
-@media (max-width: 641px){
+@media (max-width: 770px){
 
     .wrapper {
         width: 90%;
     }
 
-    // header .wrapper {
-
-    // }
 }
 
 
@@ -116,12 +114,10 @@ button {
 
 a {
     transition: color 0.25s ease-in,
-                font-weight 0.5s ease-in;
 }
 
 aside a:hover {
     color: $box-color;
-    font-weight: 700;
 }
 
 header {
@@ -140,50 +136,9 @@ header {
         cursor: pointer;
     }
 
-    .hidden-menu {
-        visibility: hidden;
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: $box-color;
-        background: rgba(0, 0, 0, 1);
-        width: 100%; 
-        height: 85vh;
-        z-index: 20;
-
-        i {
-            color: white;
-            position: absolute;
-            font-size: 2rem;
-            padding: 5% 0 0 5%;
-        }
-        
-        .flex-column{
-            height: 100%;
-            justify-content: space-around;
-            align-items: center;
-            
-            li{
-                font-size: 3.1rem;
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
-
-    #nav-toggle:checked + .hidden-menu{ 
-        visibility: visible;
-    }
-
-    // closing the nav bar is a work in progress
-
     .flex-row {
         align-items: flex-end;
         justify-content: space-between;
-    }
-
-    .hide-input {
-        visibility: hidden;
     }
 
     h1 {
@@ -196,11 +151,12 @@ header {
         color: $main-color;
     }
         
-    nav .burger {
+    nav label,
+    nav input {
         display: none;
     }
 }
-    @media (max-width: 956px){
+    @media (max-width: 928px){
         nav h2 {
                 display: none;
             }
@@ -215,10 +171,17 @@ header {
         }
     }
 
-    @media (max-width: 641px){
-        header nav .burger {
+    @media (max-width: 741px){
+
+        header nav label {
             display: block;
             width: 10%;
+            float: left;
+        }
+
+        header nav input {
+            float: left;
+            visibility: hidden;
         }
 
         nav .flex-row {
@@ -285,6 +248,7 @@ header nav {
             border-bottom: 0.125rem solid $box-color;
             padding-bottom: 3.5%;
             padding-left: 3.5%;
+            transition: 1 border ease-in;
         }
 
         .visuallyhidden,
@@ -292,7 +256,7 @@ header nav {
         #email {
             width: 46%;
         }
-        
+
         textarea {
             width: 100%;
             border: none;

@@ -1,7 +1,5 @@
 //-------------------- Visit Guyana Section --------------------
 
-// TODO: clean out commented out code
-
 .visit {
     padding-top: 6%;
 
@@ -57,7 +55,7 @@
     @media (max-width: 1325px){
 
         .flex-row {
-            padding: 8% 0;
+            padding: 3.5% 0;
             flex-direction: column-reverse;
         }
 
@@ -78,7 +76,7 @@
         }
     }
 
-    @media (max-width: 901px){
+    @media (max-width: 928px){
 
         .wrapper {
             padding-top: 5%;
@@ -104,7 +102,7 @@
         }
     }
 
-    @media (max-width: 641px){
+    @media (max-width: 741px){
 
         .wrapper {
             padding-top: 3%;
@@ -116,7 +114,7 @@
         }
 
         .text-wrapper {
-            width: 90%;
+            width: 85%;
         }
     }
     
@@ -168,22 +166,22 @@
     }
     
     @media (max-width: 1325px){
-        .wrapper.flex-row {
-            flex-wrap: wrap;
+
+        .wrapper {
+            padding: 3.5% 0;
         }
 
-        .galleryItem {
-            width: calc((100% - 8%) / 2);
-        }
-
-        .galleryItem:nth-child(3){
-            margin: 0 auto;
-            margin-top: 4%;
+        .galleryItem:nth-child(2){
+            margin: 0 2.5%;
         }
     }
 
-    @media (max-width: 901px){
+    @media (max-width: 928px){
 
+        .wrapper {
+            padding: 5% 0;
+        }        
+        
         .wrapper.flex-row{
             flex-wrap: nowrap;
             flex-direction: column;
@@ -203,7 +201,7 @@
         }
     }
 
-    @media (max-width: 641px){
+    @media (max-width: 741px){
         .galleryItem {
             width: 80%;
         }
@@ -272,7 +270,13 @@
         padding: 1.5%;
     }
 
-    @media (max-width: 901px){
+    @media (max-width: 1325px){
+        .wrapper {
+            padding: 3.5% 0;
+        }
+    }
+
+    @media (max-width: 928px){
         .text-box {
             width: 75%;
             margin-bottom: 2%;
@@ -290,7 +294,7 @@
         }
     }
 
-    @media (max-width: 641px){
+    @media (max-width: 741px){
         .text-box {
             width: 90%;
         }
@@ -400,11 +404,15 @@
     @media (max-width: 1325px){
 
         .position-top {
-            padding-top: 3%;
+            padding-top: 3.5%;
+
+            button {
+                margin-bottom: 3%;
+            }
         }
 
         .position-bottom {
-            padding-bottom: 3%;
+            padding-bottom: 3.5%;
         }
 
         .position-top.flex-row,
@@ -443,13 +451,13 @@
         }
     }
 
-    @media (max-width: 909px){
+    @media (max-width: 928px){
         .text-gallery-item{
             width: 65%;
         }
     }
 
-    @media (max-width: 641px){
+    @media (max-width: 741px){
         .text-gallery-item {
             width: 80%;
         }
@@ -488,6 +496,7 @@
 
     img {
         width: 100%;
+        height: 100%;
     }
 
     .text-wrap {
@@ -505,13 +514,15 @@
         }
     }
 
-    @media (max-width: 909px){
+    @media (max-width: 1325px){
+        .text-wrap {
+            padding: 3.5% 0;
+        }
+    }
+
+    @media (max-width: 928px){
         .text-wrap{
             width: 65%;
-        }
-
-        div:first-child{
-            display: none;
         }
     }
 
