@@ -226,16 +226,16 @@ header nav {
         .visuallyhidden,
         #name,
         #email {
-            width: 46%;
+            width: 45%;
         }
 
-        @media(max-width:501px){
-            
-            #name,
-            #email {
-                width: 48%;
-            }
-        }
+        // @media(max-width:501px){
+
+        //     #name,
+        //     #email {
+        //         width: 44%;
+        //     }
+        // }
 
 
         textarea {

@@ -252,6 +252,10 @@
 
     @media (max-width: 928px){
 
+        .main-blog {
+            margin-top: 6%;
+        }
+
         .flex-row_mobile {
             margin-bottom: 6%;
         
@@ -263,6 +267,10 @@
             .post-wrapper li {
                 flex-basis: auto;
             }
+        }
+
+        .comments h2 {
+            margin: 4%;
         }
     }
 

@@ -390,12 +390,7 @@ fieldset #email {
 fieldset .visuallyhidden,
 fieldset #name,
 fieldset #email {
-  width: 46%; }
-
-@media (max-width: 501px) {
-  fieldset #name,
-  fieldset #email {
-    width: 48%; } }
+  width: 45%; }
 
 fieldset textarea {
   width: 100%;
@@ -1076,6 +1071,8 @@ footer {
       .blog .flex-row_mobile li:nth-child(2) {
         padding-right: 1.75%; } }
   @media (max-width: 928px) {
+    .blog .main-blog {
+      margin-top: 6%; }
     .blog .flex-row_mobile {
       margin-bottom: 6%; }
       .blog .flex-row_mobile .post-wrapper {
@@ -1087,7 +1084,9 @@ footer {
         flex-direction: column; }
       .blog .flex-row_mobile .post-wrapper li {
         -ms-flex-preferred-size: auto;
-        flex-basis: auto; } }
+        flex-basis: auto; }
+    .blog .comments h2 {
+      margin: 4%; } }
   @media (max-width: 741px) {
     .blog .blog-wrapper.flex-row .wrapper {
       width: 90%; } }
