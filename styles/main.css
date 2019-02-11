@@ -392,6 +392,11 @@ fieldset #name,
 fieldset #email {
   width: 46%; }
 
+@media (max-width: 501px) {
+  fieldset #name,
+  fieldset #email {
+    width: 48%; } }
+
 fieldset textarea {
   width: 100%;
   border: none;
@@ -1084,8 +1089,6 @@ footer {
         -ms-flex-preferred-size: auto;
         flex-basis: auto; } }
   @media (max-width: 741px) {
-    .blog .blog-wrapper.flex-row .main-blog {
-      width: 100%; }
     .blog .blog-wrapper.flex-row .wrapper {
       width: 90%; } }
 

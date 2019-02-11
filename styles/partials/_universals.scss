@@ -229,6 +229,14 @@ header nav {
             width: 46%;
         }
 
+        @media(max-width:501px){
+            
+            #name,
+            #email {
+                width: 48%;
+            }
+        }
+
 
         textarea {
             width: 100%;
