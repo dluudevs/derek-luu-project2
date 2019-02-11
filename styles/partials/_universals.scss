@@ -229,13 +229,13 @@ header nav {
             width: 45%;
         }
 
-        // @media(max-width:501px){
+        @media(max-width:501px){
 
-        //     #name,
-        //     #email {
-        //         width: 44%;
-        //     }
-        // }
+            #name,
+            #email {
+                width: 100%;
+            }
+        }
 
 
         textarea {
