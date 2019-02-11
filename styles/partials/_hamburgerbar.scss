@@ -1,0 +1,72 @@
+.wrapper_full {
+    width: 100%;
+    position: relative;
+}
+
+.nav {
+    position: relative;
+    z-index: 1000;
+}
+
+.nav .main-nav .hamburger-nav,
+.nav .main-nav .close-menu {
+    padding-top: 2.5vh;
+    color: #fafafa;
+    font-size: 1.5rem;
+    text-align: right;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .main-nav .close-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    padding-top: 0;
+}
+
+.nav .main-nav .close-menu:hover {
+    color: $box-color;
+}
+
+@media (max-width: 928px) {
+
+    header nav {
+        padding-top: 0;
+    }
+    nav .menu {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+    
+    .main-nav .menu li {
+        display: block;
+        margin: 0;
+    }
+
+    .nav .main-nav .menu a {
+        display: block;
+        background: rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        text-align: center;
+        padding: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav .main-nav .close-menu, 
+    .nav .main-nav .hamburger-nav {
+        display: block;
+    }
+
+}
+
+@media (max-width: 741px){
+    
+    .nav .wrapper {
+        width: 90%;
+    }
+    
+}

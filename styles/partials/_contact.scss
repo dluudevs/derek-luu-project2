@@ -76,7 +76,7 @@
     @media (max-width: 1535px) {
 
         header h1 {
-            padding-top: 34vh;
+            padding-top: 25vh;
         }
 
         .contact-form {
@@ -88,7 +88,6 @@
 
         .form-wrapper {
             margin: 0;
-            // box-shadow: 0 1rem $box-color;
             box-shadow: none;
             border-bottom: 1rem solid $box-color;
             border-left: 0.5rem solid $box-color;
@@ -97,7 +96,7 @@
         }
         
         .contact-list.flex-row {
-            width: 65%;
+            width: 85%;
             margin: 0 auto;
             margin-bottom: 2%;
             text-align: center;
@@ -126,28 +125,24 @@
         }
     }
 
-    @media (max-width: 1325px){
-        .contact-form, .contact-list.flex-row {
-            width: 80%;
+    @media (max-width: 928px){
+        h1 {
+            font-size: 4rem;
         }
     }
 
-    @media (max-width: 928px){
+    @media (max-width: 741px){
+
+        h1 {
+            font-size: 3.1rem;
+        }
         .contact-form, .contact-list.flex-row{
             width: 90%;
         }
     }
 
-    @media (max-width: 641px){
-        .contact-form {
-            width: 95%;
-        }
-    }
 
     @media (max-width: 501px){
-        .contact-list.flex-row {
-            display: none;
-        }
 
         .contact-form {
             width: 98%;

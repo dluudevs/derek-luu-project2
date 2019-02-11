@@ -20,7 +20,6 @@ html{
     }
 }
 
-
 .fullbleed {
     height: 85vh;
 }
@@ -37,8 +36,8 @@ html{
     .wrapper {
         width: 90%;
     }
+    
 }
-
 
 .flex-row {
     display:flex;
@@ -98,6 +97,15 @@ form {
     }
 }
 
+@media (max-width: 501px){
+    form {
+        input::placeholder,
+        textarea::placeholder{
+            font-size: 0.9rem;
+        }
+    }
+}
+
 footer,
 button {
     color: white;
@@ -131,11 +139,6 @@ header {
         }
     }
 
-    .burger:hover,
-    .close-nav:hover {
-        cursor: pointer;
-    }
-
     .flex-row {
         align-items: flex-end;
         justify-content: space-between;
@@ -157,13 +160,6 @@ header {
     }
 }
     @media (max-width: 928px){
-        nav h2 {
-                display: none;
-            }
-
-        nav .flex-row {
-            justify-content: center;
-        }
 
         .blog h1,
         .contact h1 {
@@ -173,13 +169,9 @@ header {
 
     @media (max-width: 741px){
 
-
-        nav .flex-row {
-            display: none;
+        nav .wrapper {
+            width: 100%;
         }
-
-        //------------------------ hamburger nav bar ------------------------
-
     }
 
 .blog h1,
@@ -236,6 +228,7 @@ header nav {
         #email {
             width: 46%;
         }
+
 
         textarea {
             width: 100%;

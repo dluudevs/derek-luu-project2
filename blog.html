@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Beachstay - Blog</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display+SC:700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     <link rel="html" href="index.html">
     <link rel="html" href="contact.html">
     <link rel="stylesheet" href="styles/main.css">
@@ -13,18 +14,24 @@
 <body class="blog">
     <header id="home">
         <div class="fullbleed">
-            <div class="wrapper">
-                <nav>
-                    <div class="flex-row">
+            <nav class="nav">
+                <div class="wrapper">
+                    <div class="main-nav flex-row">
                         <h2><a href="index.html#home">Beachstay</a></h2>
-                        <ul>
+                        <ul class="menu">
                             <li><a href="index.html#home">Home</a></li>
                             <li><a href="index.html#about">About</a></li>
                             <li><a href="#home">Blog</a></li>
                             <li><a href="contact.html">Contact</a></li>
+                            <span class="sr-only">close nav menu</span>
+                            <li class="close-menu"><i class="fas fa-times"></i></li>
                         </ul>
+                        <span class="sr-only">toggle nav menu</span>
+                        <a class="hamburger-nav"><i class="fas fa-bars"></i></a>
                     </div>
-                </nav>
+                </div>
+            </nav>
+            <div class="wrapper">
                 <h1>Blog</h1>
             </div>
         </div>
@@ -131,6 +138,8 @@
     <footer id="footer">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
-
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+        integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+    <script src='navbar.js'></script>
 </body>
 </html>

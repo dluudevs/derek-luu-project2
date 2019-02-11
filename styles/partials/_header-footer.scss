@@ -4,10 +4,6 @@
         background: url(../assets/home-image-1.jpg);
         background-size: cover;
     }
-
-    .wrapper {
-        position: relative;
-    }
     
     h1 {
         padding-top: 36vh;
@@ -36,7 +32,7 @@
     @media (max-width: 1535px){
        
         h1 {
-            padding-top: 34vh;
+            padding-top: 25vh;
             padding-left: 6vw;
             align-self: center;
         }
@@ -57,26 +53,7 @@
                 line-height: 2rem;
             }
         }
-        
-
-
     }
-
-    // @media (max-width: 751px){
-    //     //first font-size change in html occurs 741px 641px
-
-    //     h1 {
-    //         font-size: calc(4rem * (3.1 / 5));
-    //         //original font-size 3.1rem
-    //         text-align: center;
-
-    //         span {
-    //             font-size: 4rem; //80px 
-    //             line-height: 0.5;
-    //             //original font-size 5rem
-    //         }
-    //     }
-    // }
 
     @media (max-width: 741px){
 
@@ -97,11 +74,11 @@
     @media (max-width: 501px){
 
         h1 {
-            font-size: calc(2.625rem * (3.1 / 5));
+            font-size: calc(2.5rem * (3.1 / 5));
             // original font size 3.1rem
 
             span {
-                font-size: 2.625rem; //42px
+                font-size: 2.5rem; //40px
                 line-height: 0;
                 // original font size 5rem
             }
