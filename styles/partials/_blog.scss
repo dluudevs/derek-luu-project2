@@ -245,7 +245,11 @@
             }
             
             li:nth-child(2){
-                padding-right: 1.75%;
+                padding-right: 1.70%;
+            }
+
+            li:first-child {
+                padding-right: 3%;
             }
         }
     }

@@ -1077,7 +1077,9 @@ footer {
       .blog .flex-row_mobile li:nth-child(3) {
         margin-bottom: 2%; }
       .blog .flex-row_mobile li:nth-child(2) {
-        padding-right: 1.75%; } }
+        padding-right: 1.70%; }
+      .blog .flex-row_mobile li:first-child {
+        padding-right: 3%; } }
   @media (max-width: 928px) {
     .blog .main-blog {
       margin-top: 6%; }
