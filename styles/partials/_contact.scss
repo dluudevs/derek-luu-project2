@@ -43,8 +43,7 @@
     }
 
     aside {
-        min-width: 1%; 
-        padding-top: 4%;
+        padding-top: 3%;
 
         a:hover {
             color: $box-color;
@@ -83,7 +82,7 @@
             position: static;
             width: 65%;
             margin: 0 auto;
-            margin-top: 2%;
+            margin-top: 3%;
         }
 
         .form-wrapper {
@@ -98,7 +97,6 @@
         .contact-list.flex-row {
             width: 85%;
             margin: 0 auto;
-            margin-bottom: 2%;
             text-align: center;
         }
 
@@ -118,6 +116,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin-bottom: 3%;
             li {
                 margin-right: 2%;
                 flex-basis: content;

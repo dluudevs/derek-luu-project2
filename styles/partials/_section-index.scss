@@ -120,7 +120,8 @@
     
     @media (max-width: 501px){
 
-        .img-wrap {
+        .img-wrap,
+        .text-wrapper {
             width: 100%;
 
             img {
@@ -130,6 +131,7 @@
 
         .text-wrapper {
             text-align: center;
+            margin-top: 2%;
         }
 
         .text-wrap {
