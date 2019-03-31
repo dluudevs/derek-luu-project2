@@ -232,7 +232,8 @@
         font-size: 1.4rem;
         margin-right: 3%;
         align-self: flex-start;
-        flex-basis: 10%;
+        // flex-basis: 8%;
+        flex-basis: fit-content;
     }
 
     .text-box {
@@ -252,18 +253,22 @@
     }
 
     .text-top .text-box:first-child i {
-        padding: 1.5% 1.3%;
+        // padding: 1.5% 1.3%;
+        padding: 0.45rem 0.35rem;
     }
     .text-top .text-box:last-child i {
-        padding: 1.5% 1%;
+        // padding: 1.5% 1%;
+        padding: 0.4rem 0.3rem;
     }
 
     .text-bottom .text-box:first-child i {
-        padding: 1.25% 0% 1.25% 2.75%;
+        // padding: 1.25% 0% 1.25% 2.25%;
+        padding: 0.4rem 0.5rem 0.4rem 0.6rem;
     }
 
     .text-bottom .text-box:last-child i {
-        padding: 1.5%;
+        // padding: 1.5%;
+        padding: 0.4rem;
     }
 
     @media (max-width: 1325px){
