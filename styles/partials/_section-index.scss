@@ -230,8 +230,9 @@
         border-radius: 50%;
         color: white;
         font-size: 1.4rem;
-        align-self: flex-end;
         margin-right: 3%;
+        align-self: flex-start;
+        flex-basis: 10%;
     }
 
     .text-box {
@@ -240,12 +241,9 @@
 
     .text-box.flex-row{
 
-        i {
-            align-self: flex-start;
-        }
         
         .flex-column {
-            width: 90%;
+            flex-basis: 90%;
         }
     }
 
@@ -261,7 +259,7 @@
     }
 
     .text-bottom .text-box:first-child i {
-        padding: 1.5% 2.1%;
+        padding: 1.25% 0% 1.25% 2.75%;
     }
 
     .text-bottom .text-box:last-child i {
