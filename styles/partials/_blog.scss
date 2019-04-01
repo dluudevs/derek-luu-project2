@@ -290,4 +290,17 @@
             }
         }
     }
+
+    @media (max-width: 572px){
+
+        .article-text h2 {
+            line-height: 1.75rem;
+        }
+
+        .article-text h3 {
+            line-height: 1.25rem;
+            margin-top: 2.5%;
+            margin-bottom: 4%;
+        };
+    }
 }

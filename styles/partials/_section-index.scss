@@ -88,11 +88,6 @@
             margin-top: 4%;
         }
     
-        .text-wrapper button {
-            min-width: 40%;
-            padding: 1.5%;
-        }
-
         p {
             margin-top: 0;
             margin-bottom: 2.5%;
@@ -342,7 +337,7 @@
 
     .position-top {
         position: relative;
-        bottom: 50px;
+        bottom: 40px;
 
         .img-wrap img {
             box-shadow: 1.5rem 1.5rem 0 -0.5rem $box-color;
@@ -361,7 +356,7 @@
 
     .position-bottom {
         position: relative;
-        top: 50px;
+        top: 40px;
 
         .img-wrap img {
             box-shadow: -1.5rem 1.5rem 0 -0.5rem $box-color;
@@ -493,14 +488,8 @@
         }
 
         .text-wrap h2 {
-            font-size: 1.5rem;
+            line-height: 1.75rem;
         }
     }
 
-    @media (max-width: 365px){
-        .text-wrap h2 {
-            font-size: 1.2rem;
-            line-height: 1.5rem;
-        }
-    }
 }

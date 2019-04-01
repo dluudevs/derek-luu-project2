@@ -287,7 +287,7 @@ button {
   letter-spacing: 0.05rem;
   background: #063974;
   border: none;
-  padding: 10px 15px; }
+  padding: 0.5rem 0.75rem; }
 
 a {
   -webkit-transition: color 0.25s ease-in;
@@ -586,9 +586,6 @@ footer {
       -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
       margin-top: 4%; }
-    .visit .text-wrapper button {
-      min-width: 40%;
-      padding: 1.5%; }
     .visit p {
       margin-top: 0;
       margin-bottom: 2.5%; } }
@@ -757,7 +754,7 @@ footer {
 
 .text-gallery .position-top {
   position: relative;
-  bottom: 50px; }
+  bottom: 40px; }
   .text-gallery .position-top .img-wrap img {
     -webkit-box-shadow: 1.5rem 1.5rem 0 -0.5rem #50e3c2;
     box-shadow: 1.5rem 1.5rem 0 -0.5rem #50e3c2; }
@@ -779,7 +776,7 @@ footer {
 
 .text-gallery .position-bottom {
   position: relative;
-  top: 50px; }
+  top: 40px; }
   .text-gallery .position-bottom .img-wrap img {
     -webkit-box-shadow: -1.5rem 1.5rem 0 -0.5rem #50e3c2;
     box-shadow: -1.5rem 1.5rem 0 -0.5rem #50e3c2; }
@@ -875,12 +872,7 @@ footer {
   .free-trip .text-wrap {
     width: 100%; }
   .free-trip .text-wrap h2 {
-    font-size: 1.5rem; } }
-
-@media (max-width: 365px) {
-  .free-trip .text-wrap h2 {
-    font-size: 1.2rem;
-    line-height: 1.5rem; } }
+    line-height: 1.75rem; } }
 
 .blog {
   position: relative; }
@@ -1056,6 +1048,13 @@ footer {
   @media (max-width: 741px) {
     .blog .blog-wrapper.flex-row .wrapper {
       width: 90%; } }
+  @media (max-width: 572px) {
+    .blog .article-text h2 {
+      line-height: 1.75rem; }
+    .blog .article-text h3 {
+      line-height: 1.25rem;
+      margin-top: 2.5%;
+      margin-bottom: 4%; } }
 
 .contact .fullbleed {
   background: url("../assets/contact-image-1.jpg");
